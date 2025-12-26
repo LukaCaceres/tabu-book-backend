@@ -18,4 +18,4 @@ async def process_tab(file: UploadFile = File(...)):
             'detected_text': extracted_text
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail='Error procesando la imagen')
+        raise HTTPException(status_code=500, detail='Error procesando la imagen:')
